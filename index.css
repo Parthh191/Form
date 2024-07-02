@@ -14,7 +14,6 @@ body{
     place-items: center;
 }
 form{
-    margin-top:var(--MERGIN);
     background-color: rgb(231, 228, 228);
     width: 85%;
     height: auto;
