@@ -14,6 +14,7 @@ body{
     place-items: center;
 }
 main{
+    margin-top:var(--MERGIN)
     background-color: rgb(231, 228, 228);
     width: 95%;
     height: auto;
