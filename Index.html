@@ -9,59 +9,65 @@
     <title>Contact Form</title>
 </head>
 <body>
-     <div id="success-message">
-        <h1> <img src="img/success.svg" alt="success">Message Sent</h1>
-        <p>Thanks for completing the from. We'll be in touch soon!</p>
-     </div>
-    <form  id="contact-form">
-        <h1>Contact Us</h1>
-        <div class="name">
-            <div class="Firstname">
-                <label for="firstname"> First Name *</label>
-                <input type="text" id="firstname" name="firstname">
-                <p class="alert">This field is required</p>
-            </div>
-            <div class="Lastname">
-                <label for="lastname">Last Name *</label>
-                <input type="text" id="lastname" name="lastname">
-                <p class="alert">This field is required</p>
-            </div>
-        </div>
-        <div class="email">
-            <label for="email">Email Address *</label>
-            <input type="text" id="email" name="email">
-            <p class="alert">This field is required</p>
-        </div>
-        <div class="query"> 
-            <label >Query Type *</label>
-            <div class="queryItems">
-                <label for="general" class="General">
-                    <input type="radio" id="general" name="query-type" >
-                    <a>General Enquiry</a>
-                </label>
-                <label for="support" class="support">
-                    <input type="radio" name="query-type" id="support">
-                    Support Request
-                </label>
-            </div>
-            <p class="alert">Please slect a query type</p>
+    <header>
+         <div id="success-message">
+            <h1> <img src="img/success.svg" alt="success">Message Sent</h1>
+            <p>Thanks for completing the from. We'll be in touch soon!</p>
          </div>
-        <div class="message">
-            <label for="message">Message *</label>
-            <textarea name="message" id="message"></textarea>
-            <p class="alert">This filed is required</p>
-        </div>
-        <div class="check">
-            <label for="check">
-                <input type="checkbox" name="checkbox" id="check">
-                I consent to being contacted by the team *
-            </label>
-            <p class="alert">To Submit This form please consent to being</p>
-        </div>
-        <div class="button">
-            <button type="submit">Submit</button>
-        </div>
-    </form>
-    
+     </header>
+    <main>
+        <form  id="contact-form">
+            <h1>Contact Us</h1>
+            <div class="name">
+                <div class="Firstname">
+                    <label for="firstname"> First Name *</label>
+                    <input type="text" id="firstname" name="firstname">
+                    <p class="alert">This field is required</p>
+                </div>
+                <div class="Lastname">
+                    <label for="lastname">Last Name *</label>
+                    <input type="text" id="lastname" name="lastname">
+                    <p class="alert">This field is required</p>
+                </div>
+            </div>
+            <div class="email">
+                <label for="email">Email Address *</label>
+                <input type="text" id="email" name="email">
+                <p class="alert">This field is required</p>
+            </div>
+            <div class="query"> 
+                <label >Query Type *</label>
+                <div class="queryItems">
+                    <label for="general" class="General">
+                        <input type="radio" id="general" name="query-type" >
+                        <a>General Enquiry</a>
+                    </label>
+                    <label for="support" class="support">
+                        <input type="radio" name="query-type" id="support">
+                        Support Request
+                    </label>
+                </div>
+                <p class="alert">Please slect a query type</p>
+             </div>
+            <div class="message">
+                <label for="message">Message *</label>
+                <textarea name="message" id="message"></textarea>
+                <p class="alert">This filed is required</p>
+            </div>
+            <div class="check">
+                <label for="check">
+                    <input type="checkbox" name="checkbox" id="check">
+                    I consent to being contacted by the team *
+                </label>
+                <p class="alert">To Submit This form please consent to being</p>
+            </div>
+            <div class="button">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>This website is created by<a href="https://github.com/Parthh191">Parth Tyagi</a></p>
+    </footer>
 </body>
 </html>
