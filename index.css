@@ -1,0 +1,140 @@
+:root{
+    --COLOR:green;
+    --MERGIN:1em;
+    --HEIGHT:30px;
+    --WIDTH:300px;
+    --CURSOR:pointer;
+    --BGCOLOR:lawngreen;
+}
+
+
+body{
+    background-color: rgb(211, 237, 245);
+    display: grid;
+    place-items: center;
+}
+form{
+    background-color: rgb(231, 228, 228);
+    max-width: 80%;
+    height: auto;
+    margin: 2em;
+    border-radius: 15px;
+}
+h1{
+    margin: var(--MERGIN);
+}
+input{
+    margin: var(--MERGIN);
+}
+label{
+    margin:var(--MERGIN);
+}
+
+textarea{
+    margin:var(--MERGIN);
+}
+.name{
+    display: flex;
+    flex-wrap: wrap;
+    margin: var(--MERGIN);
+}
+.Firstname{
+    display: grid;
+}
+.Firstname input{
+    height: var(--HEIGHT);
+    width: var(--WIDTH);
+}
+.Lastname{
+    margin-left: var(--MERGIN);
+    display: grid;
+}
+.Lastname input{
+    height: var(--HEIGHT);
+    width: var(--WIDTH);
+}
+.email{
+    display: grid;
+    margin: var(--MERGIN);
+}
+.email input{
+    height: var(--HEIGHT);
+}
+.message{
+    margin: var(--MERGIN);
+    display: grid;
+}
+
+button{
+    margin: 1.5em;
+    background-color: rgb(0, 128, 81);
+    width: 92%;
+    height: 3em;
+    font-size: 1.2em;
+    color: white;
+}
+.check{
+    margin: var(--MERGIN);
+}
+.check label input{
+    accent-color:var(--COLOR);
+}
+.query{
+    margin: 1em;
+}
+.queryItems{
+    display: flex;
+    flex-wrap: wrap;
+}
+.General{
+    border: 2px double rgb(158, 153, 153);
+    border-radius: 3px;
+    font-size: 1.2em;
+    width: 300px;
+    justify-items: center;
+}
+.General:hover{
+    cursor: pointer;
+}
+.General:has(input:checked){
+    border: 2px double var(--COLOR);
+    background-color:var(--BGCOLOR);
+}
+.support{
+    margin-left: var(--MERGIN);
+    border: 2px double  rgb(158, 153, 153);
+    border-radius: 3px;
+    font-size:1.2rem;
+    width: 300px;
+    justify-items: center;
+}
+.support:hover{
+    cursor: pointer;
+}
+.support:has(input:checked){
+    border: 2px double var(--COLOR);
+    background-color: var(--BGCOLOR);
+}
+.queryItems label input{
+  accent-color:var(--COLOR);
+}
+textarea{
+height: 100px;
+}
+input:hover{
+    cursor: pointer;
+    border:2px double var(--COLOR);
+}
+.alert{
+    margin: var(--MERGIN);
+    color: red;
+    font-size: 0.6rem;
+    display: none;
+}
+#success-message{
+    display: none;
+    color: white;
+    background-color:rgb(55, 53, 53);
+}
+
+
