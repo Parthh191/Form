@@ -13,10 +13,10 @@ body{
     display: grid;
     place-items: center;
 }
-main{
+form{
     margin-top:var(--MERGIN)
     background-color: rgb(231, 228, 228);
-    width: 90%;
+    width: 85%;
     height: auto;
     margin: 2em;
     border-radius: 15px;
