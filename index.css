@@ -2,9 +2,10 @@
     --COLOR:green;
     --MERGIN:1em;
     --HEIGHT:30px;
-    --WIDTH:300px;
+    --WIDTH:325px;
     --CURSOR:pointer;
     --BGCOLOR:lawngreen;
+    --BORDERRADIUS:5px;
 }
 
 
@@ -19,19 +20,25 @@ form{
     height: auto;
     margin: 2em;
     border-radius: 15px;
+    
 }
 h1{
     margin: var(--MERGIN);
 }
 input{
     margin: var(--MERGIN);
+    border-radius: var(--BORDERRADIUS);
 }
 label{
     margin:var(--MERGIN);
 }
 
 textarea{
+    display: grid;
     margin:var(--MERGIN);
+    border-radius: var(--BORDERRADIUS);
+    height: 100px;
+    width: 92%;
 }
 .name{
     display: flex;
@@ -46,7 +53,6 @@ textarea{
     width: var(--WIDTH);
 }
 .Lastname{
-    margin-left: var(--MERGIN);
     display: grid;
 }
 .Lastname input{
@@ -59,6 +65,8 @@ textarea{
 }
 .email input{
     height: var(--HEIGHT);
+    width: 92%;
+    
 }
 .message{
     margin: var(--MERGIN);
@@ -66,12 +74,15 @@ textarea{
 }
 
 button{
-    margin: 1.5em;
+    text-align: center;
+    display: grid;
     background-color: rgb(0, 128, 81);
-    width: 92%;
-    height: 3em;
-    font-size: 1.2em;
+    width: 89%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1em;
     color: white;
+    margin-left: 2em;
 }
 .check{
     margin: var(--MERGIN);
@@ -88,9 +99,9 @@ button{
 }
 .General{
     border: 2px double rgb(158, 153, 153);
-    border-radius: 3px;
+    border-radius: var(--BORDERRADIUS);
     font-size: 1.2em;
-    width: 300px;
+    width: 320px;
     justify-items: center;
 }
 .General:hover{
@@ -103,9 +114,9 @@ button{
 .support{
     margin-left: var(--MERGIN);
     border: 2px double  rgb(158, 153, 153);
-    border-radius: 3px;
+    border-radius: var(--BORDERRADIUS);
     font-size:1.2rem;
-    width: 300px;
+    width: 320px;
     justify-items: center;
 }
 .support:hover{
@@ -118,9 +129,7 @@ button{
 .queryItems label input{
   accent-color:var(--COLOR);
 }
-textarea{
-height: 100px;
-}
+
 input:hover{
     cursor: pointer;
     border:2px double var(--COLOR);
@@ -135,11 +144,33 @@ input:hover{
     display: none;
     color: white;
     background-color:rgb(55, 53, 53);
-}
-footer{
-    text-align: center;
-}
-header{
+    position: fixed;
+    top: 0;
     text-align: center;
 }
 
+
+@media  screen and (max-width:799px) {
+    
+    .name label{
+        margin-left: 2em;
+    }
+    .name{
+        display: inline;
+    }
+    .Lastname input{
+        width: 87%;
+        margin-left: 2em;
+    }
+    .Firstname input{
+        width: 87%;
+        margin-left: 2em;
+    }
+    .General{
+        width:92%;
+    }
+    .support{
+        width: 92%;
+    }
+    
+}
