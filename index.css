@@ -93,6 +93,9 @@ button{
 .query{
     margin: 1em;
 }
+.qr{
+    margin:1.5em;
+}
 .queryItems{
     display: flex;
     flex-wrap: wrap;
