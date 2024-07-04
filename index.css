@@ -72,7 +72,9 @@ textarea{
     margin: var(--MERGIN);
     display: grid;
 }
-
+.message label{
+    margin: 1.5em;
+}
 button{
     text-align: center;
     display: grid;
@@ -91,10 +93,10 @@ button{
     accent-color:var(--COLOR);
 }
 .query{
-    margin: 1em;
+    margin: 0.7em;
 }
 .qr{
-    margin:1.5em;
+    margin: 1.5em;
 }
 .queryItems{
     display: flex;
