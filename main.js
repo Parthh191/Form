@@ -66,7 +66,7 @@ form.addEventListener('submit', (e) => {
   
     if (getValue) {
         const successMessage = document.getElementById('success-message');
-        successMessage.style.display = 'block';
+        successMessage.style.display = 'grid';
         form.reset()
         setTimeout(() => {
           successMessage.style.display = 'none';
